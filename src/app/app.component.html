@@ -1,0 +1,31 @@
+<section class="head">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="header">
+          <div class="inner">
+            <a href="#menu" class="nav-bars">
+              <img src="assets/images/nav-icon.png" class="img-responsive" alt="Collapsable Navbar">
+            </a>
+            <a routerLink="/home" routerLinkActive="active" class="logo">
+              Steph's Site
+            </a>
+          </div>
+        </header>
+
+        <!-- Menu -->
+
+        <nav id="menu">
+          <h2>Menu</h2>
+          <ul>
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/chat" routerLinkActive="active">Chat</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<router-outlet></router-outlet>

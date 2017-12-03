@@ -1,0 +1,44 @@
+
+<section id="content">
+    <div class="container">
+      <div class="row">
+        <div class="grid_8">
+          <h2>{{video.Title}}</h2>
+          <div class="blog">
+            <youtube videoid="{{video.youtube_id}}" width="100%"></youtube>
+            <p>{{video.Text}}</p>
+          </div>
+           If You are experiancing issues with seeing the videos, try refreshing the web page. Youtube doesn't like when i call for videos so quickly.	
+        </div>
+        <div class="grid_4 blog">
+         <table>
+            <tbody>
+              <tr><td>
+                  <a href="#">
+                  <div class="fa fa-user"></div> 
+                  {{video.Poster}}</a>
+              </td></tr>
+              <tr><td>
+                <time datetime="2014-01-01">
+                  <span class="fa fa-calendar"></span>
+                  {{video.Date}}  
+                </time>
+              </td></tr>
+              <!--
+              <tr>
+                <td><div class="fa fa-bookmark"></div> Uncategorized  </td>
+                <td colspan="2"><div class="fa fa-tag"></div> No tags</td>
+              </tr>
+              <tr>
+                <td><div class="fa fa-comments"></div> No comments   </td>
+                <td colspan="2"><div class="fa fa-eye"></div>182
+                <div class="fa fa-thumbs-up"></div>0
+                <div class="fa fa-thumbs-down"></div>0</td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+         </div>
+      </div>
+    </div>
+  </section>

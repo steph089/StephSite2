@@ -1,0 +1,47 @@
+<section id="content" class="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <h2>Gallery</h2>
+        </div>
+        <div class="grid_4" ng-repeat = "picture in pictures">
+          <div class="box">
+            <a ui-sref="picture({Id: picture.ID})" class="gall_item"><img src="images/pictures/{{picture.Picture}}" alt="" height="207"><span></span></a>
+            <div class="box_bot">
+              <div class="box_bot_title">{{picture.Title}}</div>
+              <p>{{picture.Text | limitTo:150}}</p>
+              <a href="#" class="btn">more</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid_12">
+          <div class="btn-group">
+            <button type="button" class="btn" ng-click="previousPage('picture')">
+              <span class="fa fa-chevron-left"></span>
+            </button>
+            <span class="text-muted">
+            <b>{{picturepage}}</b>
+             of
+            <b>{{picturepagemax}}</b>
+            </span>
+            <button type="button" class="btn" ng-click="nextPage('picture')">
+              <span class="fa fa-chevron-right"></span>
+            </button>
+          </div>
+        </div>
+        <div class="grid_12">
+          <h2>Video Gallery</h2>
+        </div>
+        <div class="grid_4" ng-repeat = "video in videos">
+          <div class="box">
+            <a ui-sref="video({Id: video.ID})" class="gall_item"><img src="images/videos/{{video.Picture}}" alt="" height="207"><span></span></a>
+            <div class="box_bot">
+              <div class="box_bot_title">{{video.Title}}</div>
+              <p>{{video.Text | limitTo:50}}</p>
+              <a href="#" class="btn">more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

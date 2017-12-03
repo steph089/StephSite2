@@ -6,6 +6,4 @@ import { Router }            from '@angular/router';
    selector: 'chat',
   templateUrl: './chat.html'
 })
-export class ChatComponent {
-
-}
+export class ChatComponent {}

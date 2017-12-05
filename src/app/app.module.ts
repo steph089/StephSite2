@@ -11,6 +11,8 @@ import {BlogsComponent}   from './components/blog/blogs';
 import {AboutComponent}   from './components/about/about';
 import {ChatComponent} from './components/chat/chat';
  
+import {AlbumService} from './services/album.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import {ChatComponent} from './components/chat/chat';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AlbumService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
